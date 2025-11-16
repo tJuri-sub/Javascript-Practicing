@@ -96,7 +96,7 @@ function formValidation() {
     );
     isValid = false;
   } else if (password === username) {
-    errorHandlingText(user_error, "Password cannot be the same as username.");
+    errorHandlingText(pass_error, "Password cannot be the same as username.");
     isValid = false;
   }
 

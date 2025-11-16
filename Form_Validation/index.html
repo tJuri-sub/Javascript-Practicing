@@ -5,5 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form onsubmit="formRegistration(); return false;" novalidate>
+      <div>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" autocomplete="false" />
+        <p id="fnameError"></p>
+      </div>
+
+      <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" autocomplete="false" />
+        <p id="lnameError"></p>
+      </div>
+
+      <div>
+        <label for="userName">Username</label>
+        <input type="text" id="userName" autocomplete="false" />
+        <p id="usernameError"></p>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" autocomplete="false" />
+        <p id="emailError"></p>
+      </div>
+
+      <div>
+        <label for="pass">Password</label>
+        <input type="text" id="pass" autocomplete="false" />
+        <p id="passError"></p>
+      </div>
+
+      <div>
+        <label for="cPass">Confirm Password</label>
+        <input type="text" id="cPass" autocomplete="false" />
+        <p id="cpassError"></p>
+      </div>
+
+      <div>
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+
+    <script src="./main.js"></script>
+  </body>
 </html>

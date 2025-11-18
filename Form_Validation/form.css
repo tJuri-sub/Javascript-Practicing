@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #63c5da;
+}
+
+.formContainer {
+  margin: 5em;
+  padding: 1em;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-radius: 20px;
+  background: #63c5da;
+  box-shadow: 17px 17px 34px #54a7b9, -17px -17px 34px #72e3fb;
+}
+
+.formContainer div {
+  margin: 2px;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer div p {
+  margin-top: 5px;
+}
+
+input[type="text"] {
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+  background: #63c5da;
+  box-shadow: inset 5px 5px 10px #54a7b9, inset -5px -5px 10px #72e3fb;
+}
+
+.formContainer div:first-child {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.formContainer div:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.formContainer div:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.formContainer div:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.formContainer div:last-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.formContainer div:last-child input[type="submit"] {
+  padding: 0.8em 0em;
+  border: none;
+  border-radius: 10px;
+  background: #63c5da;
+  box-shadow: 6px 6px 12px #54a7b9, -6px -6px 12px #72e3fb;
+  margin-top: 10px;
+}
